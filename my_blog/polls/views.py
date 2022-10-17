@@ -17,3 +17,5 @@ def question_detail(request, question_id):
    question = get_object_or_404(Question, pk=question_id)
    return render(request, 'polls/question_detail.html', {'question': question})
    question = get_object_or_404(Question,pk=Question_id)
+def home_views(request):
+   return render(request, 'home.html')
